@@ -515,6 +515,48 @@ td { color: var(--text); }
 ol, ul { padding-left: 22px; margin: 8px 0; }
 ol li, ul li { margin: 4px 0; }
 
+/* ---------------- 照片(自由许可,署名在说明行) ---------------- */
+
+.figure {
+  margin: var(--sp-6) 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card);
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+}
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: saturate(0.9) contrast(1.05);
+}
+.figure figcaption {
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+.figure figcaption .credit {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.72rem;
+  color: #8a8478;
+}
+.figure figcaption .credit a { color: #8a8478; text-decoration: underline; text-underline-offset: 2px; }
+
+.photo-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-4);
+  align-items: start;
+}
+.photo-duo .figure { margin: 0; }
+
+@media (max-width: 720px) {
+  .photo-duo { grid-template-columns: 1fr; }
+}
+
 /* ---------------- 页脚 ---------------- */
 
 .site-footer {
