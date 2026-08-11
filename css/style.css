@@ -267,6 +267,7 @@ table { font-variant-numeric: tabular-nums; }
 
 .section { padding: var(--sp-8) 0; }
 .section + .section { border-top: 1px solid var(--line); }
+.section-flush { padding-top: 0; }
 
 .section-title {
   font-size: 1.75rem;
