@@ -47,6 +47,8 @@ body {
   font-size: 16px;
 }
 
+body.nav-open { overflow: hidden; }
+
 .container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
 
 a { color: var(--accent); text-decoration: none; text-underline-offset: 3px; }
